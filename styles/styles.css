@@ -1,1 +1,124 @@
-/* No CSS *//*# sourceMappingURL=styles.css.map */
+body {
+  background-image: url("/images/bg.jpg");
+}
+
+.max-wid {
+  max-width: 1000px;
+}
+
+.row {
+  height: 3rem;
+}
+
+.container {
+  height: 100vh;
+  margin: auto;
+}
+
+.container .row:nth-child(1) {
+  background-color: lightblue;
+}
+
+.container .row:nth-child(2) {
+  background-color: lightcoral;
+}
+
+.container .row:nth-child(3) {
+  background-color: lightgreen;
+}
+
+.container .row:nth-child(5) {
+  background-color: lightyellow;
+}
+
+.container .row:nth-child(6) {
+  background-color: lightgrey;
+}
+
+.container .row:nth-child(7) {
+  background-color: lightsalmon;
+}
+
+.container .photo-banner {
+  position: relative;
+  height: 18rem;
+  background-image: url("/images/top-image.png");
+  background-repeat: no-repeat;
+  background-size: 75rem 40rem;
+  background-position: 42.5% 20%;
+  border: 8px solid white;
+  overflow: hidden;
+}
+
+.container .photo-banner .img-grid {
+  max-width: 100%;
+  height: auto;
+  padding: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transform: scale(1.8);
+          transform: scale(1.8);
+  opacity: 0.35;
+}
+
+.container .photo-banner .peralta-logo {
+  position: absolute;
+  width: 45%;
+  top: 20%;
+  left: 2.5%;
+}
+
+.container .blurbs {
+  height: auto;
+  margin-top: 1.5rem;
+}
+
+.container .blurbs .blurb {
+  background-color: #fefefe;
+  padding: 1rem;
+}
+
+.container .blurbs .blurb .blurb-title {
+  font-size: 0.85rem;
+}
+
+.container .blurbs .blurb .blurb-date {
+  font-size: 0.65rem;
+  color: #c6c6c6;
+}
+
+.container .blurbs .blurb .blurb-description {
+  font-size: 0.5rem;
+  margin-bottom: 0.2rem;
+}
+
+.container .blurbs .blurb .blurb-read-more {
+  display: inline-block;
+  color: #b22b32;
+  width: 100%;
+  font-size: 0.6rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.container .photo-bios {
+  height: 30rem;
+  overflow: hidden;
+}
+
+.container .photo-bios .photo-row-1, .container .photo-bios .photo-row-2, .container .photo-bios .side-image {
+  max-width: 100%;
+}
+
+.container .photo-bios .row {
+  height: 8rem;
+}
+
+.cheesy {
+  background-color: darkgoldenrod;
+}
+
+i {
+  color: hotpink;
+}
+/*# sourceMappingURL=styles.css.map */

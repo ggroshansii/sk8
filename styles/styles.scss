@@ -1,0 +1,111 @@
+$red: #b22b32;
+$grey: #c6c6c6;
+$white: #fefefe;
+
+body {
+    background-image: url("/images/bg.jpg");
+}
+
+.max-wid {
+    max-width: 1000px;
+}
+
+.row {
+    height: 3rem;
+}
+
+.container {
+    height: 100vh;
+
+    margin: auto;
+    .row:nth-child(1) {
+        background-color: lightblue;
+    }
+    .row:nth-child(2) {
+        background-color: lightcoral;
+    }
+    .row:nth-child(3) {
+        background-color: lightgreen;
+    }
+    .row:nth-child(4) {
+    }
+    .row:nth-child(5) {
+        background-color: lightyellow;
+    }
+    .row:nth-child(6) {
+        background-color: lightgrey;
+    }
+    .row:nth-child(7) {
+        background-color: lightsalmon;
+    }
+
+    .photo-banner {
+        position: relative;
+        height: 18rem;
+        background-image: url("/images/top-image.png");
+        background-repeat: no-repeat;
+        background-size: 75rem 40rem;
+        background-position: 42.5% 20%;
+        border: 8px solid white;
+        overflow: hidden;
+        .img-grid {
+            max-width: 100%;
+            height: auto;
+            padding: 0;
+            object-fit: cover;
+            transform: scale(1.8);
+            opacity: 0.35;
+        }
+        .peralta-logo {
+            position: absolute;
+            width: 45%;
+            top: 20%;
+            left: 2.5%;
+        }
+    }
+    .blurbs {
+        height: auto;
+        margin-top: 1.5rem;
+        .blurb {
+            background-color: $white;
+            padding: 1rem;
+            .blurb-title {
+                font-size: 0.85rem;
+            }
+            .blurb-date {
+                font-size: 0.65rem;
+                color: $grey;
+            }
+            .blurb-description {
+                font-size: 0.5rem;
+                margin-bottom: 0.2rem;
+            }
+            .blurb-read-more {
+                display: inline-block;
+                color: $red;
+                width: 100%;
+                font-size: 0.6rem;
+                font-weight: 700;
+                text-align: center;
+            }
+        }
+    }
+    .photo-bios {
+        height: 30rem;
+        overflow: hidden;
+        .photo-row-1, .photo-row-2, .side-image{
+            max-width: 100%;
+        }
+        .row {
+            height: 8rem;
+        }
+    }
+}
+
+.cheesy {
+    background-color: darkgoldenrod;
+}
+
+i {
+    color: hotpink;
+}
