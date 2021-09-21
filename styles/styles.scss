@@ -36,11 +36,10 @@ body {
         height: 2.5rem;
         div {
             background-color: $red;
-            width: 24%;
             color: white;
             text-align: center;
             padding-top: 0.55rem;
-            font-size: 60%;
+            font-size: 61%;
             &:hover {
                 background-color: $white;
                 border: 2px solid $red;
@@ -81,7 +80,7 @@ body {
         .blurb {
             background-color: $white;
             padding: 1rem;
-            width: 30%;
+            width: 32%;
             .blurb-title {
                 font-size: 0.85rem;
             }
@@ -164,7 +163,7 @@ body {
     }
 
 
-#pointer {
+#pointer { 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -218,8 +217,12 @@ body {
 @media screen and (max-width: 700px) {
     .skateboards {
         height: 20rem;
-        .skateboard {
-            transform: rotate(-90deg);
+        .skateboard img {
+            transform: rotate(90deg);
         }
+    }
+
+    .container-fluid .nav-anchors {
+        height: 6rem;
     }
 }

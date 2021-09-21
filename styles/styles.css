@@ -35,11 +35,10 @@ body {
 
 .container-fluid .nav-anchors div {
   background-color: #b22b32;
-  width: 24%;
   color: white;
   text-align: center;
   padding-top: 0.55rem;
-  font-size: 60%;
+  font-size: 61%;
 }
 
 .container-fluid .nav-anchors div:hover {
@@ -86,7 +85,7 @@ body {
 .container-fluid .blurbs .blurb {
   background-color: #fefefe;
   padding: 1rem;
-  width: 30%;
+  width: 32%;
 }
 
 .container-fluid .blurbs .blurb .blurb-title {
@@ -245,9 +244,12 @@ body {
   .skateboards {
     height: 20rem;
   }
-  .skateboards .skateboard {
-    -webkit-transform: rotate(-90deg);
-            transform: rotate(-90deg);
+  .skateboards .skateboard img {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  .container-fluid .nav-anchors {
+    height: 6rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */
