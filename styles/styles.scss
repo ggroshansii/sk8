@@ -80,7 +80,6 @@ body {
         .blurb {
             background-color: $white;
             padding: 1rem;
-            width: 32%;
             .blurb-title {
                 font-size: 0.85rem;
             }
@@ -159,6 +158,11 @@ body {
         margin-top: 2rem;
         .skateboard {
             transform: rotate(90deg);
+
+            img {
+                height: 100%;
+                width: 100%;
+            }
         }
     }
 
@@ -216,11 +220,11 @@ body {
 
 @media screen and (max-width: 700px) {
     .skateboards {
-        height: 20rem;
-        .skateboard img {
-            transform: rotate(90deg);
-        }
+        height: 80rem;
     }
+     .skateboards .skateboard img {
+            transform: rotate(-90deg);
+        }
 
     .container-fluid .nav-anchors {
         height: 6rem;

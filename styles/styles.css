@@ -85,7 +85,6 @@ body {
 .container-fluid .blurbs .blurb {
   background-color: #fefefe;
   padding: 1rem;
-  width: 32%;
 }
 
 .container-fluid .blurbs .blurb .blurb-title {
@@ -179,6 +178,11 @@ body {
           transform: rotate(90deg);
 }
 
+.skateboards .skateboard img {
+  height: 100%;
+  width: 100%;
+}
+
 #pointer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -242,11 +246,11 @@ body {
 
 @media screen and (max-width: 700px) {
   .skateboards {
-    height: 20rem;
+    height: 80rem;
   }
   .skateboards .skateboard img {
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
   }
   .container-fluid .nav-anchors {
     height: 6rem;
