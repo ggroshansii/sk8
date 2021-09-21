@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 body {
   background-image: url("/images/bg.jpg");
 }
@@ -153,6 +154,8 @@ body {
   background-repeat: no-repeat;
   width: 100%;
   color: white;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 2.5rem;
 }
 
 .container-fluid .photo-bios .photo-div {
@@ -166,15 +169,56 @@ body {
   height: 13rem;
 }
 
-.container-fluid .skateboards {
+.skateboards {
   height: 20rem;
   background-color: #fefefe;
   margin-top: 2rem;
 }
 
-.container-fluid .skateboards .skateboard {
+.skateboards .skateboard {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
+}
+
+#pointer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 150px;
+  height: 60px;
+  position: relative;
+  background: #b22b32;
+  top: 700px;
+  left: 60px;
+  color: white;
+  text-align: center;
+}
+
+#pointer:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+}
+
+#pointer:before {
+  content: "";
+  position: absolute;
+  right: -30px;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 30px solid #b22b32;
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
 }
 
 .form-div {
