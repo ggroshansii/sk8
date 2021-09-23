@@ -169,18 +169,16 @@ body {
 
 .skateboards {
   height: 20rem;
-  background-color: #fefefe;
+  position: relative;
+  right: 125px;
+  bottom: 100px;
   margin-top: 2rem;
 }
 
 .skateboards .skateboard {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
-}
-
-.skateboards .skateboard img {
-  height: 100%;
-  width: 100%;
+  width: 10%;
 }
 
 #pointer {
@@ -244,16 +242,28 @@ body {
   margin-bottom: 1rem;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 750px) {
   .skateboards {
+    margin-top: 4rem;
     height: 80rem;
+    position: static;
+    right: 0px;
+    bottom: 0px;
+  }
+  .skateboards .skateboard {
+    width: 100%;
+    margin-top: 0.5rem;
   }
   .skateboards .skateboard img {
     -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg);
+    height: 100%;
   }
   .container-fluid .nav-anchors {
     height: 6rem;
+  }
+  .blurb {
+    margin-bottom: 0.5rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */

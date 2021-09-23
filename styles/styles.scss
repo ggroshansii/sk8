@@ -152,19 +152,22 @@ body {
        
     }
 
+
     .skateboards {
         height: 20rem;
-        background-color: $white;
+        position: relative;
+        right: 125px;
+        bottom: 100px;
         margin-top: 2rem;
         .skateboard {
             transform: rotate(90deg);
-
+            width: 10%;
             img {
-                height: 100%;
-                width: 100%;
+
             }
         }
     }
+
 
 
 #pointer { 
@@ -218,15 +221,29 @@ body {
     }
 }
 
-@media screen and (max-width: 700px) {
-    .skateboards {
+@media screen and (max-width: 750px) {
+    .skateboards{
+        margin-top: 4rem;
         height: 80rem;
+        position: static;
+        right: 0px;
+        bottom: 0px;
+        .skateboard {
+            width: 100%;
+            margin-top: 0.5rem;
+        }
     }
+
      .skateboards .skateboard img {
             transform: rotate(-90deg);
+            height: 100%;
+
         }
 
     .container-fluid .nav-anchors {
         height: 6rem;
+    }
+    .blurb {
+        margin-bottom: 0.5rem;
     }
 }
